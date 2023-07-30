@@ -17,8 +17,8 @@ Find my recipe is a user-friendly and intuitive meal planning application that a
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/MealApp.git
-   cd MealApp
+   git clone https://github.com/Pradeepwiki/Find-my-recipe.git
+   cd Find-my-recipe
    ```
 
 2. Open `index.html` in your preferred web browser.
@@ -31,7 +31,7 @@ Find my recipe is a user-friendly and intuitive meal planning application that a
 
 ### Demo:
 
-You can try out the live demo of MealApp [here](https://your-username.github.io/MealApp).
+You can try out the live demo of MealApp [here](https://pradeepwiki.github.io/Find-my-recipe).
 
 ### Authors:
 
