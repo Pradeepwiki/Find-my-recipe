@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="nav">
+            <div class="logo"><h1>Find<b>my</b>Recipe</h1></div>
+        </div>
+    </section>
+  <div id="flex-box">
+    <section class="grid">
+        <div class="content">
+            <div class="content-left">
+                <div class="info">
+                    <h2>Satisfy Your Cravings <br>Mouth-Watering Recipes Galore</h2>
+                    <p>Hey, Find inspiration for your next meal with our vast recipe database, <br>
+                        Cook Like a Pro - Expertly Crafted Recipes</p>
+                </div>
+                <div class="fav-button">
+                    <button id="fav-button-control">My favourites</button>
+                </div>
+            </div>
+            <div class="content-right">
+                <img src="assets/My project.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- search bar -->
+    <section>
+        <div class="quote"><q>If more of us valued food and cheer and song above hoarded gold, it would be a merrier world.</q>-
+            J.R.R. Tolkien <br></div>
+        <div class="search">
+          <form onkeyup="getMealList()">
+            <input type="search" id = "search-data" placeholder="Go Ahead Search for Recipes...">
+          </form>
+            <button type="submit" class="search-button"><i class="fas fa-search"></i>
+            </button>
+        </div>
+    </section>
+    <div class = "meal-result">
+        <div id= "meal">
+        </div>
+      </div>
+
+
+      <div class = "meal-details">
+        <!-- recipe close btn -->
+        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+
+        <!-- meal content -->
+        <div class = "meal-details-content">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
