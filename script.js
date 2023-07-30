@@ -24,44 +24,6 @@ recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
 });
 
-
-// get meal list that matches with the ingredients
-// function getMealList(){
-//     const list = JSON.parse(localStorage.getItem(dbObjectFavList));
-//     let searchInputTxt = document.getElementById('search-data').value.trim();
-//     console.log("data");
-//     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
-//     .then(response => response.json())
-//     .then(data => {
-//         let html = "";
-//         if(data.meals){
-//             data.meals.forEach(meal => {
-//                 html += `
-//                     <div class = "meal-item" data-id = "${meal.idMeal}">
-//                         <div class = "meal-img">
-//                             <img src = "${meal.strMealThumb}" alt = "food">
-//                         </div>
-//                         <div class = "meal-name">
-//                             <h3>${meal.strMeal}</h3>
-//                             <a href = "#" class = "recipe-btn">Ingredients</a>
-//                         </div>
-//                         <div class="like">
-//                                 <i class="fa-solid fa-heart ${isFav(list, meal.idMeal) ? 'active' : ''} " onclick="addRemoveToFavList(${meal.idMeal})"></i>
-//                         </div>
-//                     </div>
-//                 `;
-//             });
-//             mealList.classList.remove('notFound');
-//         } else{
-//             html = `<div class = "info">
-//                             <h2> Oops, cant find the recipe you're looking for.....</h2>
-//                     </div>`;
-//             mealList.classList.add('notFound');
-//         }
-
-//         mealList.innerHTML = html;
-//     });
-// }
 async function getMealList() {
     const list = JSON.parse(localStorage.getItem(dbObjectFavList));
     const searchInputTxt = document.getElementById('search-data').value.trim();
@@ -103,18 +65,6 @@ async function getMealList() {
     }
   }
   
-
-// get recipe of the meal
-// function getMealRecipe(e){
-//     e.preventDefault();
-//     if(e.target.classList.contains('recipe-btn')){
-//         let mealItem = e.target.parentElement.parentElement;
-//         fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`)
-//         .then(response => response.json())
-//         .then(data => mealRecipeModal(data.meals));
-//     }
-// }
-
 async function getMealRecipe(e) {
     e.preventDefault();
   
